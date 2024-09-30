@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grandfather{
+            display: grid;
+            font-size: x-large;
+            height: 100dvh;
+            gap: 10px;
+            font-weight: 700; 
+            grid-template-areas: 
+            'L L L L L L L L L L L L'
+            'L L L L L L L L L L L L'
+            'N N N N N N N N N N N N'
+            'H H H H H H H H H H H H'
+            'H H H H H H H H H H H H'
+            'H H H H H H H H H H H H'
+            'H H H H H H H H H H H H'
+            'S S S B B B B B B B B B'
+            'S S S B B B B B B B B B'
+            'S S S B B B B B B B B B'
+            'S S S B B B B B B B B B'
+            'S S S B B B B B B B B B'
+            'S S S B B B B B B B B B'
+            'S S S B B B B B B B B B'
+            'S S S B B B B B B B B B'
+            'F F F F F F F F F F F F'
+            ;
+            
+        .box1,.box2,.box3,.box4,.box5,.box6{
+            /* border: 2px solid greenyellow; */
+            background-color: #c0c0c0
+        }
+        .box1{
+             padding: 30px;
+        }
+        .box2,.box3,.box4,.box5,.box6{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box1{grid-area: L;}
+        .box2{grid-area: N;}
+        .box3{grid-area: H;}
+        .box4{grid-area: S;}
+        .box5{grid-area: B;}
+        .box6{grid-area: F;}
+    </style>
+</head>
+<body>
+    <div class=" grandfather">
+            <div class="box1">Logo</div>
+            <div class="box2">Navigation</div>
+            <div class="box3">Header / Benner</div> 
+            <div class="box4">Skle Bar</div>
+            <div class="box5">Body Area</div>
+            <div class="box6">Footer</div>    
+    </div>
+</body>
+</html>

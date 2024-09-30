@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Layout</title>
+    <style>
+        .grandfather{
+            display: grid;
+            gap: 10px;
+            height: 100vw;
+            font-size: x-large;
+            font-weight: 700;
+            grid-template-areas: 
+            'Logo Logo Logo Logo Logo Logo Logo Logo Logo Logo Logo Logo'
+            'Logo Logo Logo Logo Logo Logo Logo Logo Logo Logo Logo Logo'
+            'need need need need need need need need need need need need'
+            'need need need need need need need need need need need need'
+            'need need need need need need need need need need need need'
+            'need need need need need need need need need need need need'
+            'need need need need need need need need need need need need'
+            'need need need need need need need need need need need need'
+            'need need need need need need need need need need need need'
+            'need need need need need need need need need need need need'
+            'box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3'
+            'box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3'
+            'box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3'
+            'box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3'
+            'Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer'
+        }
+        .box1,.box3,.box4,.box5,.box6{
+            /* border: 2px solid rebeccapurple; */
+             background-color: #c0c0c0; 
+        }
+        .box3,.box4,.box5,.box6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1{grid-area: Logo;}
+        .box2{grid-area: need;}
+        .box3{grid-area: box1;}
+        .box4{grid-area: box2;}
+        .box5{grid-area: box3;}
+        .box6{grid-area: Footer;}
+        .need{
+            /* border: 2px solid green; */
+            background-color: #c0c0c0;
+        }
+        .box1{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            padding: 20px;
+        }
+        .box2{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grandfather">
+            <div class="box1">
+                <div class="one">Logo</div>
+                <div class="one">Nevigation</div>
+              </div>
+             <div class="box2">
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+                  <div class="need"></div>
+             </div>
+            <div class="box3">Box-1</div>
+            <div class="box4">Box-2</div>
+            <div class="box5">Box-3</div> 
+            <div class="box6">Footer</div>
+    </div>
+</body>
+</html>

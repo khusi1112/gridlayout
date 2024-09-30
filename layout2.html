@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .baba{
+            display: grid;
+            height: 100vh;
+            gap: 20px;
+            font-weight: 700;
+            font-size: x-large;
+            grid-template-areas: 
+            'a a a a a a a a a a a a'
+            'a a a a a a a a a a a a'
+            'b b b b b b b b b b b b'
+            'b b b b b b b b b b b b'
+            'b b b b b b b b b b b b'
+            'b b b b b b b b b b b b'
+            'c c c d d d e e e f f f'
+            'g g g g g g g h h h h h'
+            'g g g g g g g h h h h h'
+            'g g g g g g g h h h h h'
+            'g g g g g g g h h h h h'
+            'g g g g g g g i i i i i'
+            'g g g g g g g i i i i i'
+            'g g g g g g g i i i i i'
+            'g g g g g g g i i i i i'
+            'g g g g g g g i i i i i'
+            'j j j j j j j j j j j j'
+            'j j j j j j j j j j j j'
+            'j j j j j j j j j j j j'
+            'j j j j j j j j j j j j'
+             ;
+        }
+            /* div er box */
+         .box-1,.box-2,.box-3,.box-4,.box-5,.box-6,.box-7,.box-8,.box-9,.box-10{
+            /* border: 2px solid teal; */
+            background-color: #BEBEBE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }  
+         /* grid-area te new class name neya,and grid-template-area te eygulo bosbe*/
+         .box-1{grid-area: a;}  
+         .box-2{grid-area: b;}  
+         .box-3{grid-area: c;}  
+         .box-4{grid-area: d;}  
+         .box-5{grid-area: e;}  
+         .box-6{grid-area: f;}  
+         .box-7{grid-area: g;}  
+         .box-8{grid-area: h;}  
+         .box-9{grid-area: i;}  
+         .box-10{grid-area: j;}    
+
+    </style>
+</head>
+<body>
+    <!--.box-$*10-->
+    <div class="baba">
+    <div class="box-1">Company logo and something</div>
+    <div class="box-2">Header</div>
+    <div class="box-3">Navigation</div>
+    <div class="box-4">Navigation</div>
+    <div class="box-5">Navigation</div>
+    <div class="box-6">Navigation</div>
+    <div class="box-7">About</div>
+    <div class="box-8">Quick links</div>
+    <div class="box-9">Quick links</div>
+    <div class="box-10">Site plan and copyright info</div>
+   </div>
+</body>
+</html>
